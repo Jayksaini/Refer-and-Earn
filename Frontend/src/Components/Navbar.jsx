@@ -3,12 +3,17 @@ import React from "react";
 const Navbar = () => {
   return (
     <>
-      {/* <button className="btn">Next</button> */}
-      <div className="flex justify-center items-end ">
-        <button className="bg-amber-800 cursor-pointer  border rounded-xl p-10 m-10 ">
-          Next
-        </button>
-      </div>
+      <nav className="flex justify-between bg-black font-[roboto] text-white p-4 pt-8">
+        <div>
+          <h1 className="font-bold text-2xl">ReferRewards</h1>
+          </div>
+          <ul className="hidden md:flex space-x-6">
+            <li><a href="">Home</a></li>
+            <li><a href="">My referrals</a></li>
+            <li><a href=""><img src="" alt="profile" /></a></li>
+          </ul>
+       
+      </nav>
     </>
   );
 };
